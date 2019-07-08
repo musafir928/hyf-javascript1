@@ -15,6 +15,7 @@ console.log("o2: " + o2.foo);
 console.log("o3: " + o3.foo);
 
 //  but changing o2 will change o3 ***
+//  because complex object in js when we asign them they will get same address
 o1 = { foo: "bar" };
 o2 = { foo: "changedbar" };
 o3 = o2;
