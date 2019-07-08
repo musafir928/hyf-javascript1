@@ -6,7 +6,7 @@ let myBook = {
     By: "Unknown"
 };
 printObject = (a) => {
-    for (var property in a) {
+    for (let property in a) {
         console.log(property + " : " + a[property])
     };
 };
