@@ -1,21 +1,21 @@
 /* 6. Create a function called vehicle, like before, 
 but takes another parameter called age,
 so that vehicle("blue", 1, 5) prints 'a blue used car */
-vehicle = (color, a, b) => {
+vehicle = (color, code, age) => {
     let type;
-    if (a === 1) {
+    if (code === 1) {
         type = "car";
-    } else if (a === 2) {
+    } else if (code === 2) {
         type = "motorbike";
     } else { type = "bike" };
 
-    let age;
-    if (b < 2) {
-        age = "new";
+    let condition;
+    if (age < 2) {
+        condition = "new";
     } else {
-        age = "used";
+        condition = "used";
     };
-    console.log("a " + color + " " + age + " " + type + ".");
+    console.log("code " + color + " " + condition + " " + type + ".");
 };
 vehicle("blue", 1, 5);
 vehicle("white", 3, 1);
@@ -30,15 +30,15 @@ console.log(thirdelement);
 // 9. Change the function vehicle to use the list of question 7.
 //  So that vehicle("green", 3, 1) prints "a green new bike"
 
-changedVehicleFunction = (color, a, b) => {
+changedVehicleFunction = (color, code, age) => {
     let type = listOfVehicels[a - 1];
-    let age;
-    if (b < 2) {
-        age = "new";
+    let condition;
+    if (age < 2) {
+        condition = "new";
     } else {
-        age = "used";
+        condition = "used";
     };
-    console.log("a " + color + " " + age + " " + type + ".");
+    console.log("age " + color + " " + condition + " " + type + ".");
 };
 
 changedVehicleFunction("green", 3, 1)
